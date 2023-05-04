@@ -1,0 +1,10 @@
+ 
+
+.mouse-moved:hover{
+-fx-background-color:  White ;
+
+}
+
+.selected{
+-fx-background-color: #e3dbb6;
+}

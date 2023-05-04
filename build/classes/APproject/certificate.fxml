@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APproject.certificateController">
+   <center>
+      <AnchorPane id="AnchorPane" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="629.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03969c4e" height="127.0" layoutY="-22.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="631.0" />
+            <CubicCurve controlX1="-104.0" controlX2="489.0" controlY1="-245.0" controlY2="2.0" endX="-167.0" endY="-178.0" fill="#03989e" layoutX="167.0" layoutY="175.0" startX="-167.0" startY="-129.5" stroke="#e3dbb689" />
+            <CubicCurve controlX1="-76.0" controlX2="65.0" controlY1="-356.0" controlY2="-171.0" endX="432.0" endY="-307.0" fill="#03989e" layoutX="197.0" layoutY="307.0" startX="432.0" startY="-262.163818359375" stroke="#e3dbb68a" />
+            <ImageView fx:id="proLogo" fitHeight="443.0" fitWidth="424.0" layoutX="121.0" layoutY="90.0" opacity="0.19" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="139.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certificate of Completion">
+               <font>
+                  <Font name="Haettenschweiler" size="45.0" />
+               </font>
+            </Text>
+            <Text layoutX="278.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Granted to:">
+               <font>
+                  <Font name="Agency FB" size="19.0" />
+               </font>
+            </Text>
+            <Line endX="203.33334350585938" layoutX="300.0" layoutY="244.0" startX="-169.99998474121094" />
+            <Text fx:id="proCredit" layoutX="471.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By: zedny elman" textAlignment="CENTER" wrappingWidth="148.8033790588379" />
+            <Line endX="29.502838134765625" layoutX="128.0" layoutY="431.0" startX="-100.0" />
+            <Line endX="100.0" layoutX="515.0" layoutY="431.0" startX="-40.497161865234375" />
+            <Label fx:id="name" alignment="CENTER" layoutX="178.0" layoutY="198.0" prefHeight="37.0" prefWidth="263.0" text="StudentName">
+               <font>
+                  <Font name="Agency FB" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="28.0" layoutY="437.0" prefHeight="22.0" prefWidth="121.0" text="Label" />
+            <Label fx:id="courseName" alignment="CENTER" layoutX="117.0" layoutY="318.0" prefHeight="45.0" prefWidth="393.0" text="CourseName">
+               <font>
+                  <Font name="Agency FB" size="29.0" />
+               </font>
+            </Label>
+            <Text fx:id="body" layoutX="59.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="JUSTIFY" wrappingWidth="511.47008514404297">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="logo" fitHeight="87.0" fitWidth="78.0" layoutX="20.0" layoutY="14.0" onMouseClicked="#goBackToProfile" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/uniLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="11.0" prefWidth="629.0" spacing="430.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" onMouseClicked="#CertifToProfile" prefHeight="13.0" prefWidth="106.0" text="back to profile">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label alignment="TOP_RIGHT" onMouseClicked="#download" prefHeight="17.0" prefWidth="97.0" text="downlaod ">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/download.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

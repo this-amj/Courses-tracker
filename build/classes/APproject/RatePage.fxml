@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APproject.RatePageController">
+    <stylesheets>
+        <URL value="@evaluation.css" />
+    </stylesheets>
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="100.0" fill="#e4ddb6" height="627.0" layoutX="-14.0" layoutY="-15.0" opacity="0.21" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="356.0" />
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="56.0" layoutY="299.0" prefHeight="40.0" prefWidth="227.0" textAlignment="CENTER" textFill="#03989e">
+         <font>
+            <Font name="Rockwell Bold" size="27.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03969c4f" height="163.0" layoutX="-2.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="339.0" />
+      <CubicCurve controlX1="8.464767456054688" controlX2="136.35409545898438" controlY1="-278.83502197265625" controlY2="-21.954315185546875" endX="-190.0" endY="-185.36978149414062" fill="#03989e" layoutX="188.0" layoutY="200.0" startX="-190.0" startY="-65.0" stroke="#e3dbb689" />
+      <CubicCurve controlX1="-65.58822631835938" controlX2="-188.32386779785156" controlY1="-307.3645935058594" controlY2="-118.29548645019531" endX="125.0" endY="-240.5" fill="#03989e" layoutX="211.0" layoutY="313.0" startX="123.99996948242188" startY="-156.24249267578125" stroke="#e3dbb68a" />
+      <Button fx:id="star_2_btn" layoutX="102.0" layoutY="349.0" mnemonicParsing="false" onAction="#clickStartow" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: tansparent; -fx-border-color: tansparent;" />
+      <Button fx:id="star_3_btn" layoutX="151.0" layoutY="349.0" mnemonicParsing="false" onAction="#clickStarthree" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: whit tansparente; -fx-border-color: tansparent;" />
+      <Button fx:id="star_4_btn" layoutX="199.0" layoutY="349.0" mnemonicParsing="false" onAction="#clickStarfour" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: tansparentwhite; -fx-border-color: tansparent;" />
+      <Button fx:id="star_5_btn" layoutX="246.0" layoutY="349.0" mnemonicParsing="false" onAction="#clickStarfive" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: whi tansparentte; -fx-border-color: tansparent;" />
+      <ImageView fitHeight="123.0" fitWidth="104.0" layoutX="116.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="151.0" fitWidth="148.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="104.0" layoutX="111.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Rate.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="29.0" layoutY="422.0" mnemonicParsing="false" onAction="#sendRate" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: #e4ddb6;" text="Send">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="star_1_btn" layoutX="53.0" layoutY="349.0" mnemonicParsing="false" onAction="#clickStarone" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: whit tansparente; -fx-border-color: tansparent;" />
+   
+   </children>
+   
+</AnchorPane>

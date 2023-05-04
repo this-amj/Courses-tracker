@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="319.0" style="-fx-background-color: #ffffff; -fx-background-image: 1618201e616f4a40928c403f222d7562-removebg-preview.png;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APproject.HomePageController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Rectangle fill="#e4ddb6" height="44.0" layoutY="539.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="319.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9968253726050967">
+               <stops>
+                  <Stop color="#e4ddb6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03969c9c" height="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="321.0" />
+      <Label layoutX="17.0" layoutY="184.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="261.0" layoutY="8.0" mnemonicParsing="false" onAction="#toHomeProfilePicBtn" prefHeight="38.0" prefWidth="44.0" style="-fx-background-radius: 30; -fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="36.0" onMouseClicked="#homeToPofilePicIcon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/girlpicprofile.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Text fill="WHITE" layoutX="13.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H e l l o ,">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="UserName" layoutX="94.0" layoutY="16.0" prefHeight="30.0" prefWidth="164.0" text="name" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3dbb669" height="478.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="321.0" />
+      <TextField fx:id="searchTF" layoutX="48.0" layoutY="93.0" onAction="#SearchtextfHP" prefHeight="24.0" prefWidth="222.0" promptText="Search" style="-fx-border-color: #e4ddb6;" styleClass="mouse-moved" stylesheets="@style.css" />
+      <Text layoutX="16.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="25.0" layoutY="165.0" prefHeight="132.0" prefWidth="269.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="majorbtn" mnemonicParsing="false" onAction="#majorbtnHP" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #b3e6ff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #99ddff;" text="Majors">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/majoricon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="newestbtn" mnemonicParsing="false" onAction="#newestbtnHP" prefHeight="29.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffb3b3; -fx-border-color: #ff9999;" text="Newest " GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/popularicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="advancedbtn" mnemonicParsing="false" onAction="#advancedbtnHP" prefHeight="39.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: #ffd9b3; -fx-border-color: #ffcc99;" text="Advanced" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/advancedicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="beginnerbtn" mnemonicParsing="false" onAction="#beginnerbtnHP" prefHeight="39.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: #e6ccff; -fx-border-color: #d9b3ff;" text="Beginner" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/beginnericon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="5.0" layoutY="313.0" prefHeight="198.0" prefWidth="308.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="308.0" style="-fx-background-color: #ffffff; -fx-background-insets: 5,5,5,5; -fx-background-radius: 5;">
+               <children>
+                  <ListView fx:id="majorlist" prefHeight="200.0" prefWidth="308.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="-3.0" layoutY="540.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="104.0" style="-fx-background-color: #ffffff; -fx-border-color: #e4ddb6;">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/homeicon%20(2).jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="-56.33331298828125" endY="23.0" layoutX="155.0" layoutY="558.0" startX="-56.33331298828125" startY="-19.0" stroke="WHITE" strokeWidth="2.0" />
+      <Button fx:id="courseBtn" layoutX="101.0" layoutY="540.0" mnemonicParsing="false" onAction="#homeToCoursesBtn" prefHeight="44.0" prefWidth="104.0" style="-fx-background-color: #ffffff; -fx-border-color: #e4ddb6;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="45.0" onMouseClicked="#homeToCoursesIcon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/coursesicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="-56.33331298828125" endY="23.0" layoutX="266.0" layoutY="558.0" startX="-56.33331298828125" startY="-19.0" stroke="WHITE" strokeWidth="2.0" />
+      <Button fx:id="profileBtn" layoutX="205.0" layoutY="540.0" mnemonicParsing="false" onAction="#homeToProfileBtn" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #ffffff; -fx-border-color: #e4ddb6;">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" onMouseClicked="#homeToProfileIcon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/profileicon.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="enrollPane" layoutX="22.0" layoutY="205.0" prefHeight="238.0" prefWidth="275.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <children>
+            <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#e3dbba52" height="215.0" layoutX="14.0" layoutY="12.0" stroke="#d3ceb6" strokeType="INSIDE" width="247.0" />
+            <Button layoutX="148.0" layoutY="179.0" mnemonicParsing="false" onAction="#Enroll" opacity="0.6" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: #03989e;" text="Enroll" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="62.0" layoutY="179.0" mnemonicParsing="false" onAction="#cancelEnroll" opacity="0.6" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #03989e;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="99.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/load.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="119.0" prefHeight="39.0" prefWidth="80.0" text="uqu Alzaher">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="35.0" prefHeight="39.0" prefWidth="48.0" text="Course:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseNamelbl" alignment="TOP_LEFT" layoutX="71.0" layoutY="44.0" prefHeight="48.0" prefWidth="195.0" text="course name " wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseDatelbl" layoutX="70.0" layoutY="78.0" prefHeight="39.0" prefWidth="152.0" text="course date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="79.0" prefHeight="39.0" prefWidth="48.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="120.0" prefHeight="39.0" prefWidth="62.0" text="Location:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="enrollmsg" layoutX="22.0" layoutY="5.0" prefHeight="48.0" prefWidth="239.0" textAlignment="CENTER" textFill="#ff1212">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="18.07" radius="9.2675" spread="0.57">
+               <color>
+                  <Color blue="0.729411780834198" green="0.8588235378265381" red="0.8901960849761963" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+    </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>

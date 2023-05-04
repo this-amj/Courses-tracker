@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="319.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APproject.VerifyConfirmtionController">
+    <children>
+      <Rectangle arcHeight="60.0" arcWidth="100.0" fill="#e4ddb6" height="379.0" layoutX="-11.0" layoutY="206.0" opacity="0.21" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="333.0" />
+      <Button layoutX="24.0" layoutY="484.0" mnemonicParsing="false" onAction="#goToMyCourses" prefHeight="30.0" prefWidth="263.0" style="-fx-background-color: #e4ddb6;" text="Go To My Courses">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Circle fill="#ebe1b0" layoutX="160.0" layoutY="292.0" radius="65.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="136.0" fitWidth="169.0" layoutX="65.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/verificationcheck.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03969c4f" height="163.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="321.0" />
+      <CubicCurve controlX1="8.464767456054688" controlX2="168.0" controlY1="-278.83502197265625" controlY2="-15.0" endX="-167.0" endY="-178.0" fill="#03989e" layoutX="167.0" layoutY="178.0" startX="-167.00001525878906" startY="-15.0" stroke="#e3dbb689" />
+      <CubicCurve controlX1="-57.5404052734375" controlX2="-194.20709228515625" controlY1="-307.0" controlY2="-81.83502197265625" endX="124.0" endY="-254.8350372314453" fill="#03989e" layoutX="197.0" layoutY="307.0" startX="124.0" startY="-142.16836547851562" stroke="#e3dbb68a" />
+      <Label layoutX="17.0" layoutY="184.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="367.0" prefHeight="35.0" prefWidth="97.0" text="Verified !" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="411.0" text="Congrats you have Successfully " />
+      <Label layoutX="93.0" layoutY="434.0" text="Verified your Attendance." />
+      <ImageView fitHeight="151.0" fitWidth="148.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>
